@@ -44,10 +44,8 @@
           button.addEventListener('click', function(){
             var text = txtInput.value;
 
-            //_gaq.push(['_setAccount', 'UA-43336112-1']);
-            //_gaq.push(['_trackPageview']);
-
-            alert(text);
+            ga('create', 'UA-43336112-1', 'erlingm69.github.io');
+            ga('send', 'pageview');      
           })
         </script>
         <br>
