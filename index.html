@@ -27,7 +27,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/erlingm69">View on GitHub</a>
 
-          <h1 id="project_title">Erlingm69.github.io a test app</h1>
+          <h1 id="project_title">Erlingm69.github.io</h1>
           <h2 id="project_tagline"></h2>
 
         </header>
@@ -36,7 +36,6 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <sectionid="ga_section" class="inner"> 
-
         <input type='text' id='myPageTextInput' value='/defaultPage'/>
         <button id='myPageButton'>GA page</button>
         <script type="text/javascript">
@@ -48,7 +47,6 @@
             ga('send', 'pageview', textValue);  
           })
         </script>
-
         <input type='text' id='myEventTextInput' value='/defaultEvent'/>
         <button id='myEventButton'>GA event</button>
         <script type="text/javascript">
@@ -57,12 +55,11 @@
           eventButton.addEventListener('click', function(){
             var textValue = txtInput.value;
 
+
             ga('send', 'event', textValue, 'clicked');    
           })
         </script>
-
       </section>    
-
     </div>
 
     <!-- FOOTER  -->
