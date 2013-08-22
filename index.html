@@ -36,16 +36,16 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <sectionid="ga_section" class="inner"> 
-        <input type='text' id='myTextInput' value='AppScreen!'/>
+        <input type='text' id='myTextInput' value='/'/>
         <button id='myButton'>Fake app screen tracking!</button>
         <script type="text/javascript">
           var button = document.getElementById('myButton');
           var txtInput = document.getElementById('myTextInput');
           button.addEventListener('click', function(){
-            var text = txtInput.value;
+            var textValue = txtInput.value;
 
             ga('create', 'UA-43336112-1', 'erlingm69.github.io');
-            ga('send', 'pageview');      
+            ga('page', textValue, send', 'pageview');      
           })
         </script>
         <br>
