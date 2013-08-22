@@ -40,23 +40,22 @@
         <button id='myPageButton'>GA page</button>
         <script type="text/javascript">
           var pageButton = document.getElementById('myPageButton');
-          var txtInput = document.getElementById('myPageTextInput');
+          var pageTextInput = document.getElementById('myPageTextInput');
           pageButton.addEventListener('click', function(){
-            var textValue = txtInput.value;
+            var textPageValue = pageTextInput.value;
 
-            ga('send', 'pageview', textValue);  
+            ga('send', 'pageview', textPageValue);  
           })
         </script>
         <input type='text' id='myEventTextInput' value='/defaultEvent'/>
         <button id='myEventButton'>GA event</button>
         <script type="text/javascript">
           var eventButton = document.getElementById('myEventButton');
-          var txtInput = document.getElementById('myEventTextInput');
+          var eventTextInput = document.getElementById('myEventTextInput');
           eventButton.addEventListener('click', function(){
-            var textValue = txtInput.value;
+            var textEventValue = eventTextInput.value;
 
-
-            ga('send', 'event', textValue, 'clicked');    
+            ga('send', 'event', textEventValue, 'clicked');    
           })
         </script>
       </section>    
