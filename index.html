@@ -36,11 +36,22 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <sectionid="ga_section" class="inner"> 
-        <img src="images/icon_128.png">
-        <h1>Hello GA FFOS World!</h1>
-        <br />
         <input type='text' id='myTextInput' value='AppScreen!'/>
         <button id='myButton'>Fake app screen tracking!</button>
+        <script type="text/javascript">
+          var button = document.getElementById('myButton');
+          var txtInput = document.getElementById('myTextInput');
+          button.addEventListener('click', function(){
+            var text = txtInput.value;
+
+            //_gaq.push(['_setAccount', 'UA-43336112-1']);
+            //_gaq.push(['_trackPageview']);
+
+            alert(text);
+          })
+        </script>
+        <br>
+        <img src="images/icon_128.png">       
       </section>    
 
       <section id="main_content" class="inner">
