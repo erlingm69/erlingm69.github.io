@@ -36,7 +36,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <sectionid="ga_section" class="inner"> 
-        <input type='text' id='myTextInput' value='/defaultPage'/>
+        <input type='text' id='myTextInput' value='/defaultScreen'/>
         <button id='myButton'>Fake app screen tracking!</button>
         <script type="text/javascript">
           var button = document.getElementById('myButton');
@@ -44,13 +44,8 @@
           button.addEventListener('click', function(){
             var textValue = txtInput.value;
 
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-43336112-1', 'erlingm69.github.io');
-            ga('page', textValue, 'send', 'pageview');      
+            ga('send', 'pageview', 'page', textValue);  
+            ga('send', 'event', textValue, 'clicked');    
           })
         </script>
         <br>
