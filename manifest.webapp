@@ -10,5 +10,8 @@
 		"name": "erling",
 		"url": "http://erlingm69.github.io"
 	},
-	"type": "certified"
+	"type": "certified",
+	"permissions": {
+	"browser": {}
+	}
 }
