@@ -36,7 +36,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <sectionid="ga_section" class="inner"> 
-        <input type='text' id='myTextInput' value='/'/>
+        <input type='text' id='myTextInput' value='/default'/>
         <button id='myButton'>Fake app screen tracking!</button>
         <script type="text/javascript">
           var button = document.getElementById('myButton');
@@ -45,7 +45,7 @@
             var textValue = txtInput.value;
 
             ga('create', 'UA-43336112-1', 'erlingm69.github.io');
-            ga('page', textValue, send', 'pageview');      
+            ga('page', textValue, 'send', 'pageview');      
           })
         </script>
         <br>
