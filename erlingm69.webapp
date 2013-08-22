@@ -1,9 +1,0 @@
-{
-	"name": "Erlingm69",
-	"description": "Test app",
-	"launch_path": "/index.html",
-	"default_locale": "en",
-	"icon" {
-	"128", "images/icon_128.png"
-	}
-}
