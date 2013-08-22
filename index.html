@@ -36,18 +36,35 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <sectionid="ga_section" class="inner"> 
-        <input type='text' id='myTextInput' value='/defaultEvent'/>
-        <button id='myEventButton'>Generate GA event</button>
+
+        <input type='text' id='myPageTextInput' value='/defaultPage'/>
+        <button id='myPageButton'>GA Page</button>
         <script type="text/javascript">
-          var button = document.getElementById('myEventButton');
-          var txtInput = document.getElementById('myTextInput');
+          var button = document.getElementById('myPageButton');
+          var txtInput = document.getElementById('myPageTextInput');
           button.addEventListener('click', function(){
             var textValue = txtInput.value;
 
             ga('send', 'pageview', textValue);  
+            //ga('send', 'event', textValue, 'clicked');    
+          })
+        </script>
+
+        <br>
+        <input type='text' id='myEventTextInput' value='/defaultEvent'/>
+        <button id='myEventButton'>GA event</button>
+        <script type="text/javascript">
+          var button = document.getElementById('myEventButton');
+          var txtInput = document.getElementById('myEventTextInput');
+          button.addEventListener('click', function(){
+            var textValue = txtInput.value;
+
+            //ga('send', 'pageview', textValue);  
             ga('send', 'event', textValue, 'clicked');    
           })
         </script>
+
+
         <br>
         <img src="images/icon_128.png">       
       </section>    
