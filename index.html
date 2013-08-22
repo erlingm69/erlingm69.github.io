@@ -38,11 +38,11 @@
       <sectionid="ga_section" class="inner"> 
 
         <input type='text' id='myPageTextInput' value='/defaultPage'/>
-        <button id='myPageButton'>GA Page</button>
+        <button id='myPageButton'>GA page</button>
         <script type="text/javascript">
-          var button = document.getElementById('myPageButton');
+          var pageButton = document.getElementById('myPageButton');
           var txtInput = document.getElementById('myPageTextInput');
-          button.addEventListener('click', function(){
+          pageButton.addEventListener('click', function(){
             var textValue = txtInput.value;
 
             ga('send', 'pageview', textValue);  
@@ -50,13 +50,12 @@
           })
         </script>
 
-        <br>
         <input type='text' id='myEventTextInput' value='/defaultEvent'/>
         <button id='myEventButton'>GA event</button>
         <script type="text/javascript">
-          var button = document.getElementById('myEventButton');
+          var eventButton = document.getElementById('myEventButton');
           var txtInput = document.getElementById('myEventTextInput');
-          button.addEventListener('click', function(){
+          eventButton.addEventListener('click', function(){
             var textValue = txtInput.value;
 
             //ga('send', 'pageview', textValue);  
