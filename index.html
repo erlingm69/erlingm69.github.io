@@ -22,13 +22,20 @@
   </head>
 
   <body>
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
+
           <a id="forkme_banner" href="https://github.com/erlingm69">View on GitHub</a>
 
           <h1 id="project_title">Erlingm69.github.io</h1>
           <h2 id="project_tagline"></h2>
+
+          <script>
+              var manifest_url = "http://erlingm69.github.io/manifest.webapp";
+          </script>
+          <input type="button" id="button" value="Install FFOS Hosted app!" onclick="navigator.mozApps.install(manifest_url); return false;">
 
         </header>
     </div>
