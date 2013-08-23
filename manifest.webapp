@@ -9,9 +9,5 @@
 	"developer": {
 		"name": "erling",
 		"url": "http://erlingm69.github.io"
-	},
-	"type": "certified",
-	"permissions": {
-	"browser": {}
 	}
 }
