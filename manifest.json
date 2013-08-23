@@ -1,0 +1,10 @@
+{
+  "name": "Erlingm69",
+  "description": "Erlingm69",
+  "version": "1.0",
+  "manifest_version": 1,
+  "permissions": [
+    "https://www.google-analytics.com/",
+    "storage"
+  ]
+}
